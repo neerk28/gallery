@@ -55,17 +55,7 @@ public class Main2Activity extends AppCompatActivity {
         mViewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
         tabLayout.addOnTabSelectedListener(new TabLayout.ViewPagerOnTabSelectedListener(mViewPager));
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
 
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent googleplusIntent = getOpenGPlusIntent(Main2Activity.this);
-                startActivity(googleplusIntent);
-              //  Snackbar.make(view, "Wait for this feature!", Snackbar.LENGTH_LONG)
-              //          .setAction("Action", null).show();
-            }
-        });
 
     }
     public static Intent getOpenGPlusIntent(Context context) {
